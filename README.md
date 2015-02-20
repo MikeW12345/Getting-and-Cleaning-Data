@@ -1,10 +1,11 @@
 # Getting-and-Cleaning-Data
-#Items for getting and cleaning data project
+### Items for getting and cleaning data project
 
-## TIDYDATA file created via a two-stage process:
+### TIDYDATA file created via a two-stage process:
 ----------------------------------------------
 
 ### 1. Merging training and test data sets, along with corresponding subject ID's and activities performed to create a single data set:
+
 	a. Merge x_train and x-test - produces a single file: 10299 rows of 561 columns (features variables)
 	b. rename column names with values provided in features file
 	c. select only columns relating to mean or std dev. values - produces interim single file: 10299 rows of 66 columns (features variables)
@@ -15,9 +16,9 @@
 ** Note all merges in same order to ensure continued correspondence of subject, activity, and features data **
 
 ### 2. Use data set created in stage 1 to produce second, independent tidy data set with the average of each variable for each activity and each subject:
-#	a. melt data set, retaining subject and activity as id values (resulting in a file of 679734 rows of 4 columns)
-#	b. Rearrange the melted data set - order by activity group within subject (file remains 679734 rows of 4 columns)
-#	c. Summarise the rearranged data set creating average of each variable for each activity for each subject: 11880 rows of 4 columns
+	a. melt data set, retaining subject and activity as id values (resulting in a file of 679734 rows of 4 columns)
+	b. Rearrange the melted data set - order by activity group within subject (file remains 679734 rows of 4 columns)
+	c. Summarise the rearranged data set creating average of each variable for each activity for each subject: 11880 rows of 4 columns
 
 
 
